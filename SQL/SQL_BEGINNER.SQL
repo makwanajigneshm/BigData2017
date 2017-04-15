@@ -62,21 +62,22 @@ mysql> describe actor;
 create table if not exists movie_cast ( cast_id int(11) auto_increment primary key, movie_id int(11), actor_id int(11), actor_role varchar(100));
 alter table movie_cast add constraint fk_movie_cast_movie_id foreign key ( movie_id) references movie(movie_id);
 alter table movie_cast add constraint fk_movie_cast_actor_id foreign key ( actor_id) references actor(actor_id);
-mysql> describe movie_cast;
-+------------+--------------+------+-----+---------+----------------+
-| Field      | Type         | Null | Key | Default | Extra          |
-+------------+--------------+------+-----+---------+----------------+
-| cast_id    | int(11)      | NO   | PRI | NULL    | auto_increment |
-| movie_id   | int(11)      | YES  | MUL | NULL    |                |
-| actor_id   | int(11)      | YES  | MUL | NULL    |                |
-| actor_role | varchar(100) | YES  |     | NULL    |                |
-+------------+--------------+------+-----+---------+----------------+
+mysql> describe movie_show;
++---------------+----------+------+-----+---------+----------------+
+| Field         | Type     | Null | Key | Default | Extra          |
++---------------+----------+------+-----+---------+----------------+
+| show_id       | int(11)  | NO   | PRI | NULL    | auto_increment |
+| movie_id      | int(11)  | YES  | MUL | NULL    |                |
+| cinema_id     | int(11)  | YES  | MUL | NULL    |                |
+| show_datetime | datetime | NO   |     | NULL    |                |
++---------------+----------+------+-----+---------+----------------+
 4 rows in set (0.00 sec)
 
 --MOVIE_SHOW
-create table if not exists movie_show ( show_id int(11) auto_increment primary key, movie_id int(11), cinema_id int(11), show_date date);
+create table if not exists movie_show ( show_id int(11) auto_increment primary key, movie_id int(11), cinema_id int(11), show_datetime datetime);
 alter table movie_show add constraint fk_show_movie_id foreign key ( movie_id) references movie(movie_id);
 alter table movie_show add constraint fk_show_cinema_id foreign key ( cinema_id) references cinema(cinema_id);
+
 mysql> describe movie_show;
 +-----------+---------+------+-----+---------+----------------+
 | Field     | Type    | Null | Key | Default | Extra          |
@@ -213,4 +214,5 @@ SELECT '96.','Joseph Fiennes','Actor, Shakespeare in Love','27 May 1970','13 Feb
 insert into movie(movie_name, release_date) select distinct  movie_name , max(STR_TO_DATE(rel_date, '%d %M %Y')) from raw_data group by movie_name;
 
 insert into movie_cast(movie_id, actor_id) select movie_id, actor_id from raw_data r join movie m on  m.movie_name = r.movie_name join actor a on   a.actor_name = r.actor_name;
+
 
