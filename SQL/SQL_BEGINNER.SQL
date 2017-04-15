@@ -214,3 +214,7 @@ insert into movie(movie_name, release_date) select distinct  movie_name , max(ST
 
 insert into movie_cast(movie_id, actor_id) select movie_id, actor_id from raw_data r join movie m on  m.movie_name = r.movie_name join actor a on   a.actor_name = r.actor_name;
 
+insert into movie_show (movie_id, cinema_id, show_datetime)select movie_id, cinema_id, concat(release_date, " ", '13:00:00.0') from movie join cinema on 1=1;
+
+insert into movie_show (movie_id, cinema_id, show_datetime)select movie_id, cinema_id, concat(release_date, " ", '16:00:00.0') from movie join cinema on 1=1 where cinema_name in ('Albion Cinema', 'Rainbow Cinema', 'Cineplex Ottawa');
+
