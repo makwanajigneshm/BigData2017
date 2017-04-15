@@ -1,7 +1,7 @@
---CITY
+ --CITY
 create table if not exists city ( city_id int(11) auto_increment primary key, name varchar(40) not null);
 alter table city add constraint unq_city_name unique(name);
-alter table city change name  city_name(varchar(100));
+alter table city change name  city_name varchar(100);
 alter table city modify  city_id int(11) auto_increment;
 
 mysql> describe city;
