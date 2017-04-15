@@ -17,7 +17,6 @@ mysql> describe city;
 create table if not exists cinema ( id int(11) auto_increment primary key, city_id int(11), num_theatres int(11), cinema_name varchar(100) not null );
 alter table cinema change id cinema_id int(11);
 alter table cinema modify  cinema_id int(11) auto_increment;
-alter table cinema add constraint fk_cinema_city foreign key (city_id) references city(city_id);
 mysql> describe cinema;
 +--------------+--------------+------+-----+---------+----------------+
 | Field        | Type         | Null | Key | Default | Extra          |
