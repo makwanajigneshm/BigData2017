@@ -98,5 +98,3 @@ insert into raw_data SELECT '95.','Alec Baldwin','Actor, Beetlejuice','3 April 1
 insert into raw_data SELECT '96.','Joseph Fiennes','Actor, Shakespeare in Love','27 May 1970','13 Feb 2011' ;
 
 update raw_data set movie_name =right(movie_name, length(movie_name)-7);
-
-insert into movie_cast(movie_id, actor_id) select movie_id, actor_id from raw_data r join movie m on  m.movie_name = r.movie_name join actor a on   a.actor_name = r.actor_name;
