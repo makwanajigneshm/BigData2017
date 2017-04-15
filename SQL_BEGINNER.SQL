@@ -24,9 +24,10 @@ mysql> describe cinema;
 | cinema_id    | int(11)      | NO   | PRI | NULL    | auto_increment |
 | city_id      | int(11)      | YES  | MUL | NULL    |                |
 | num_theatres | int(11)      | YES  |     | NULL    |                |
-| cinema_name  | varchar(100) | YES  |     | NULL    |                |
+| cinema_name  | varchar(100) | NO   |     | NULL    |                |
 +--------------+--------------+------+-----+---------+----------------+
 4 rows in set (0.00 sec)
+
 --MOVIE
 create table if not exists movie ( movie_id int(11) auto_increment primary key, movie_name varchar(100), release_date date, director_name varchar(100),cost decimal(14,2), genre varchar( 20), pg_certificate varchar(10) );
 alter table movie  modify movie_name  varchar(100) not null;
@@ -96,8 +97,8 @@ insert into city (city_name) values ('Ahmedabad');
 insert into city (city_name) values ('Rajkot'	);
 insert into city (city_name) values ('Jamnagar'	);
 --Cinema
-insert into cinema (city_id,num_theatres,cinema_name ) Values ((Select city_id from city where city_name ='Toronto'		), 3,'Albion Cinema');
-insert into cinema (city_id,num_theatres,cinema_name ) Values ((Select city_id from city where city_name ='Montreal'	), 4,'Rainbow Cinema');
+insert into cinema (city_id,num_theatres,cinema_name ) Values ((Select city_id from city where city_name ='Toronto'), 3,'Albion Cinema');
+insert into cinema (city_id,num_theatres,cinema_name ) Values ((Select city_id from city where city_name ='Montreal'), 4,'Rainbow Cinema');
 insert into cinema (city_id,num_theatres,cinema_name ) Values ((Select city_id from city where city_name ='Mumbai'), 5,'Maratha Cinema');
 insert into cinema (city_id,num_theatres,cinema_name ) Values ((Select city_id from city where city_name ='Ottawa'), 6,'Cineplex Ottawa');
 insert into cinema (city_id,num_theatres,cinema_name ) Values ((Select city_id from city where city_name ='Ahmedabad'), 7,'Drivein Cinema');
