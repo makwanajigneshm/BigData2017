@@ -209,3 +209,8 @@ SELECT '94.','Jürgen Prochnow','Actor, Das Boot','10 June 1941','10 Oct 2010' u
 SELECT '95.','Alec Baldwin','Actor, Beetlejuice','3 April 1958','13 Feb 2011' union
 SELECT '96.','Joseph Fiennes','Actor, Shakespeare in Love','27 May 1970','13 Feb 2011'  ) as A;
 
+
+insert into movie(movie_name, release_date) select distinct  movie_name , max(STR_TO_DATE(rel_date, '%d %M %Y')) from raw_data group by movie_name;
+
+insert into movie_cast(movie_id, actor_id) select movie_id, actor_id from raw_data r join movie m on  m.movie_name = r.movie_name join actor a on   a.actor_name = r.actor_name;
+
