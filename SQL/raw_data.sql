@@ -10,6 +10,7 @@ insert into raw_data SELECT '7.','Tom Hanks','Actor, The Da Vinci Code','9 July 
 insert into raw_data SELECT '8.','Brad Pitt','Actor, Inglourious Basterds','18 December 1963','15 Feb 2011' ;
 insert into raw_data SELECT '9.','Anthony Hopkins','Actor, Hannibal','31 December 1937','15 Feb 2011' ;
 insert into raw_data SELECT '10.','Marlon Brando','Actor, The Godfather','3 April 1924','10 Oct 2010' ;
+
 insert into raw_data SELECT '11.','Jeremy Irons','Actor, The Lion King','19 September 1948','16 Feb 2011' ;
 insert into raw_data SELECT '12.','Denzel Washington','Actor, Training Day','28 December 1954','10 Oct 2010' ;
 insert into raw_data SELECT '13.','Gene Hackman','Actor, Unforgiven','30 January 1930','10 Oct 2010' ;
@@ -20,6 +21,7 @@ insert into raw_data SELECT '17.','William Hurt','Actor, Into the Wild','20 Marc
 insert into raw_data SELECT '18.','Kevin Costner','Actor, Dances with Wolves','18 January 1955','15 Feb 2011' ;
 insert into raw_data SELECT '19.','Clint Eastwood','Actor, Million Dollar Baby','31 May 1930','10 Oct 2010' ;
 insert into raw_data SELECT '20.','Leonardo DiCaprio','Actor, Inception','11 November 1974','10 Oct 2010' ;
+
 insert into raw_data SELECT '21.','Mel Gibson','Actor, Braveheart','3 January 1956','13 Feb 2011' ;
 insert into raw_data SELECT '22.','Robert Duvall','Actor, The Godfather: Part II','5 January 1931','11 Oct 2010' ;
 insert into raw_data SELECT '23.','Samuel L. Jackson','Actor, Pulp Fiction','21 December 1948','10 Oct 2010' ;
@@ -30,6 +32,7 @@ insert into raw_data SELECT '27.','Kevin Kline','Actor, A Fish Called Wanda','24
 insert into raw_data SELECT '28.','Morgan Freeman','Actor, The Shawshank Redemption','1 June 1937','16 Feb 2011' ;
 insert into raw_data SELECT '29.','Michael Caine','Actor, The Dark Knight','14 March 1933','10 Oct 2010' ;
 insert into raw_data SELECT '30.','Russell Crowe','Actor, Gladiator','7 April 1964','10 Oct 2010' ;
+
 insert into raw_data SELECT '31.','Bruce Willis','Actor, The Sixth Sense','19 March 1955','20 Oct 2010' ;
 insert into raw_data SELECT '32.','Johnny Depp','Actor, Edward Scissorhands','9 June 1963','13 Feb 2011' ;
 insert into raw_data SELECT '33.','Ben Kingsley','Actor, Schindlers List','31 December 1943','10 Oct 2010' ;
@@ -40,6 +43,7 @@ insert into raw_data SELECT '37.','Philip Seymour Hoffman','Actor, Capote','23 J
 insert into raw_data SELECT '38.','John Malkovich','Actor, Dangerous Liaisons','9 December 1953','10 Oct 2010' ;
 insert into raw_data SELECT '39.','Christian Bale','Actor, The Dark Knight','30 January 1974','10 Oct 2010' ;
 insert into raw_data SELECT '40.','Richard Dreyfuss','Actor, Jaws','29 October 1947','15 Feb 2011' ;
+
 insert into raw_data SELECT '41.','Jason Robards','Actor, Once Upon a Time in the West','26 July 1922','19 Feb 2011' ;
 insert into raw_data SELECT '42.','Colin Firth','Actor, The Kings Speech','10 September 1960','16 Feb 2011' ;
 insert into raw_data SELECT '43.','George Clooney','Actor, Gravity','6 May 1961','13 Feb 2011' ;
@@ -50,6 +54,7 @@ insert into raw_data SELECT '47.','Richard Gere','Actor, Pretty Woman','31 Augus
 insert into raw_data SELECT '48.','Gary Oldman','Actor, The Dark Knight Rises','21 March 1958','27 Apr 2012' ;
 insert into raw_data SELECT '49.','Harrison Ford','Actor, Star Wars','13 July 1942','13 Feb 2011' ;
 insert into raw_data SELECT '50.','Matt Damon','Actor, The Bourne Identity','8 October 1970','13 Feb 2011' ;
+
 insert into raw_data SELECT '51.','John Gielgud' Name,'Actor, Gandhi','14 April 1904' DOB ,'10 Oct 2010' ;
 insert into raw_data SELECT '52.','Joe Pesci','Actor, Goodfellas','9 February 1943','10 Oct 2010' ;
 insert into raw_data SELECT '53.','Paul Newman','Actor, Butch Cassidy and the Sundance Kid','26 January 1925','15 Feb 2011' ;
@@ -60,6 +65,7 @@ insert into raw_data SELECT '57.','Christopher Walken','Actor, Catch Me If You C
 insert into raw_data SELECT '58.','Mickey Rourke','Actor, The Wrestler','16 September 1952','10 Oct 2010' ;
 insert into raw_data SELECT '59.','Peter OToole','Actor, Lawrence of Arabia','2 August 1932','10 Oct 2010' ;
 insert into raw_data SELECT '60.','Michael Douglas','Actor, The Game','25 September 1944','11 Oct 2010' ;
+
 insert into raw_data SELECT '61.','Willem Dafoe','Actor, Spider-Man','22 July 1955','15 Feb 2011' ;
 insert into raw_data SELECT '62.','Charlton Heston','Actor, Ben-Hur','4 October 1923','28 Oct 2011' ;
 insert into raw_data SELECT '63.','Forest Whitaker','Actor, Arrival','15 July 1961','15 Feb 2011' ;
@@ -70,6 +76,7 @@ insert into raw_data SELECT '67.','Robin Williams','Actor, Good Will Hunting','2
 insert into raw_data SELECT '68.','Keanu Reeves','Actor, The Matrix','2 September 1964','10 Oct 2010' ;
 insert into raw_data SELECT '69.','Harvey Keitel','Actor, Reservoir Dogs','13 May 1939','16 Feb 2011' ;
 insert into raw_data SELECT '70.','Michael Madsen','Actor, Reservoir Dogs','25 September 1958','16 Feb 2011' ;
+
 insert into raw_data SELECT '71.','Kevin Bacon','Actor, Apollo 13','8 July 1958','16 Feb 2011' ;
 insert into raw_data SELECT '72.','Ed Harris','Actor, A Beautiful Mind','28 November 1950','10 Oct 2010' ;
 insert into raw_data SELECT '73.','Alain Delon','Actor, Le samouraï','8 November 1935','14 Feb 2011' ;
@@ -80,6 +87,7 @@ insert into raw_data SELECT '77.','Nick Nolte' NAME ,'Actor, The Thin Red Line',
 insert into raw_data SELECT '78.','Val Kilmer','Actor, Heat','31 December 1959','10 Oct 2010' ;
 insert into raw_data SELECT '79.','Joaquin Phoenix','Actor, Gladiator','28 October 1974','10 Oct 2010' ;
 insert into raw_data SELECT '80.','Jared Leto','Actor, Requiem for a Dream','26 December 1971','28 Nov 2011' ;
+
 insert into raw_data SELECT '81.','Laurence Fishburne','Actor, The Matrix','30 July 1961','10 Oct 2010' ;
 insert into raw_data SELECT '82.','Antonio Banderas','Actor, Desperado','10 August 1960','13 Feb 2011' ;
 insert into raw_data SELECT '83.','John Travolta','Actor, Pulp Fiction','18 February 1954','10 Oct 2010' ;
@@ -90,6 +98,7 @@ insert into raw_data SELECT '87.','Michael Keaton','Actor, Birdman or (The Unexp
 insert into raw_data SELECT '88.','Billy Bob Thornton','Actor, Armageddon','4 August 1955','11 Oct 2010' ;
 insert into raw_data SELECT '89.','Hugo Weaving','Actor, The Matrix','4 April 1960','15 Feb 2011' ;
 insert into raw_data SELECT '90.','Sam Shepard','Actor, Black Hawk Down','5 November 1943','13 Feb 2011' ;
+
 insert into raw_data SELECT '91.','Jude Law','Actor, Sherlock Holmes','29 December 1972','10 Oct 2010' ;
 insert into raw_data SELECT '92.','Geoffrey Rush','Actor, Pirates of the Caribbean: The Curse of the Black Pearl','6 July 1951','16 Feb 2011' ;
 insert into raw_data SELECT '93.','Roberto Benigni','Actor, Life Is Beautiful','27 October 1952','13 Feb 2011' ;
@@ -98,3 +107,6 @@ insert into raw_data SELECT '95.','Alec Baldwin','Actor, Beetlejuice','3 April 1
 insert into raw_data SELECT '96.','Joseph Fiennes','Actor, Shakespeare in Love','27 May 1970','13 Feb 2011' ;
 
 update raw_data set movie_name =right(movie_name, length(movie_name)-7);
+
+
+commit;
